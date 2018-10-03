@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y git && \
     apt-get update && \
     apt-get install -y rtorrent unzip unrar mediainfo curl php-fpm php-cli php-geoip php-mbstring nginx wget ffmpeg supervisor php-xml libarchive-zip-perl libjson-perl libxml-libxml-perl irssi sox && \
     rm -rf /var/lib/apt/lists/* && \
-    cp ./a/rutorrent-*.nginx /root/ && \
+    cp ./a/rutorrent-*.nginx /opt/ && \
     mkdir -p /var/www && cd /var/www && \
     git clone https://github.com/Novik/ruTorrent.git rutorrent && \
     rm -rf ./rutorrent/.git* && cd / && \
